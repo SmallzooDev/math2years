@@ -1,1 +1,1 @@
-# 17. Determinants Free Note
+# 17. Determinants Scratch

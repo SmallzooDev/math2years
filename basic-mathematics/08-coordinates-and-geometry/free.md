@@ -1,1 +1,1 @@
-# 8. Coordinates and Geometry Free Note
+# 8. Coordinates and Geometry Scratch

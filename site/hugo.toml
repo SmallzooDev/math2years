@@ -32,5 +32,5 @@ disableKinds = ["taxonomy", "term", "rss", "sitemap"]
   pageOrder = ["notes", "exercises", "free"]
   [params.pageLabels]
     notes = "Notes"
-    exercises = "Practices"
+    exercises = "Exercises"
     free = "Scratch"

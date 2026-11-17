@@ -1,1 +1,1 @@
-# 2. Linear Equations Free Note
+# 2. Linear Equations Scratch

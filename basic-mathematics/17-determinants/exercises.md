@@ -1,1 +1,1 @@
-# 17. Determinants 연습문제
+# 17. Determinants Exercises

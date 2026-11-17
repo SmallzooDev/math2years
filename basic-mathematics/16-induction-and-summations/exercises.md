@@ -1,1 +1,1 @@
-# 16. Induction and Summations 연습문제
+# 16. Induction and Summations Exercises

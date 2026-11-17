@@ -1,1 +1,1 @@
-# 10. Segments, Rays, and Lines 연습문제
+# 10. Segments, Rays, and Lines Exercises

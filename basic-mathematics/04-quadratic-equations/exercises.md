@@ -1,1 +1,1 @@
-# 4. Quadratic Equations 연습문제
+# 4. Quadratic Equations Exercises

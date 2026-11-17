@@ -1,1 +1,1 @@
-# 6. Isometries Free Note
+# 6. Isometries Scratch

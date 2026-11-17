@@ -1,1 +1,1 @@
-# 16. Induction and Summations Free Note
+# 16. Induction and Summations Scratch

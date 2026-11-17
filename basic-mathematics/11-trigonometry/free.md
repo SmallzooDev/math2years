@@ -1,1 +1,1 @@
-# 11. Trigonometry Free Note
+# 11. Trigonometry Scratch

@@ -1,1 +1,1 @@
-# 4. Quadratic Equations Free Note
+# 4. Quadratic Equations Scratch

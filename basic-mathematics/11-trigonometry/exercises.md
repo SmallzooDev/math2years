@@ -1,1 +1,1 @@
-# 11. Trigonometry 연습문제
+# 11. Trigonometry Exercises

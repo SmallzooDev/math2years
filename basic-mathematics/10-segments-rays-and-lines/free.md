@@ -1,1 +1,1 @@
-# 10. Segments, Rays, and Lines Free Note
+# 10. Segments, Rays, and Lines Scratch

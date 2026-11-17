@@ -1,1 +1,1 @@
-# 1. Numbers 연습문제
+# 1. Numbers Exercises

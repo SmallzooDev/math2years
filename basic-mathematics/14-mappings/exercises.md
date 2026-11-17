@@ -1,1 +1,1 @@
-# 14. Mappings 연습문제
+# 14. Mappings Exercises

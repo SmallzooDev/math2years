@@ -1,1 +1,1 @@
-# 7. Area and Applications 연습문제
+# 7. Area and Applications Exercises

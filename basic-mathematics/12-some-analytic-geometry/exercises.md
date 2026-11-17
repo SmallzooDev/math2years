@@ -1,1 +1,1 @@
-# 12. Some Analytic Geometry 연습문제
+# 12. Some Analytic Geometry Exercises

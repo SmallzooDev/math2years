@@ -1,1 +1,1 @@
-# 2. Linear Equations 연습문제
+# 2. Linear Equations Exercises

@@ -1,1 +1,1 @@
-# 9. Operations on Points Free Note
+# 9. Operations on Points Scratch

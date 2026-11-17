@@ -1,1 +1,1 @@
-# 6. Isometries 연습문제
+# 6. Isometries Exercises

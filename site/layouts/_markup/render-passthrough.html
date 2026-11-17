@@ -1,0 +1,8 @@
+{{- $opts := dict "output" "htmlAndMathml" "displayMode" (eq .Type "block") -}}
+{{- with try (transform.ToMath .Inner $opts) -}}
+  {{- with .Err -}}
+    {{- errorf "수식을 그리지 못했다: %s (%s)" . $.Position -}}
+  {{- else -}}
+    {{- if eq $.Type "block" }}<div class="math-block">{{ .Value }}</div>{{ else }}{{ .Value }}{{ end -}}
+  {{- end -}}
+{{- end -}}

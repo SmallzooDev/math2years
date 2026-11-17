@@ -1,0 +1,4 @@
+{{- $title := "" -}}
+{{- with findRESubmatch `(?m)^#\s+(.+?)\s*$` .RawContent 1 -}}{{- $title = index (index . 0) 1 -}}{{- end -}}
+{{- if not $title }}{{ with .File }}{{ $title = .ContentBaseName }}{{ else }}{{ $title = site.Title }}{{ end }}{{ end -}}
+{{- return $title -}}

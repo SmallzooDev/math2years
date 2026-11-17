@@ -1,0 +1,12 @@
+{{- $current := .page -}}
+{{- $siblings := where $current.CurrentSection.RegularPagesRecursive "File.Dir" $current.File.Dir -}}
+<ul class="{{ .class }}">
+  {{- range site.Params.pageOrder }}{{ $name := . }}
+  {{- range $siblings }}{{ if eq .File.ContentBaseName $name }}
+  <li{{ if eq . $current }} class="here"{{ end }}><a href="{{ .RelPermalink }}">{{ index site.Params.pageLabels $name | default $name }}</a></li>
+  {{- end }}{{ end }}
+  {{- end }}
+  {{- range $siblings }}{{ if not (in site.Params.pageOrder .File.ContentBaseName) }}
+  <li{{ if eq . $current }} class="here"{{ end }}><a href="{{ .RelPermalink }}">{{ .File.ContentBaseName }}</a></li>
+  {{- end }}{{ end }}
+</ul>

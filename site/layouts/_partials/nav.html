@@ -1,0 +1,21 @@
+<nav class="site-nav">
+  <div class="nav-bar">
+    <p class="nav-title"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></p>
+    <label class="nav-toggle" for="nav-check">목록</label>
+  </div>
+  <input class="nav-check" id="nav-check" type="checkbox" aria-label="목록 펼치기">
+  <div class="nav-books">
+    {{- $current := . }}
+    {{- range site.Sections }}
+    {{- $book := . }}
+    <details class="book"{{ if or (eq $current $book) ($current.IsDescendant $book) }} open{{ end }}>
+      <summary><a href="{{ .RelPermalink }}">{{ partial "booktitle.html" . }}</a></summary>
+      <ol>
+        {{- range partial "chapters.html" $book }}
+        <li{{ if and $current.File (eq $current.File.Dir .dir) }} class="here"{{ end }}><a href="{{ .page.RelPermalink }}">{{ .label }}</a></li>
+        {{- end }}
+      </ol>
+    </details>
+    {{- end }}
+  </div>
+</nav>

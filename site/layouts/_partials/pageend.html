@@ -1,0 +1,15 @@
+{{- $chapters := partial "chapters.html" .CurrentSection -}}
+{{- $prev := false }}{{ $next := false -}}
+{{- range $i, $chapter := $chapters -}}
+  {{- if eq $chapter.dir $.File.Dir -}}
+    {{- if gt $i 0 }}{{ $prev = index $chapters (sub $i 1) }}{{ end -}}
+    {{- if lt (add $i 1) (len $chapters) }}{{ $next = index $chapters (add $i 1) }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+<nav class="page-end">
+  {{ partial "pages.html" (dict "page" . "class" "page-end-pages") }}
+  <div class="page-end-chapters">
+    <span>{{ with $prev }}<a href="{{ .page.RelPermalink }}">이전 장: {{ .label }}</a>{{ end }}</span>
+    <span>{{ with $next }}<a href="{{ .page.RelPermalink }}">다음 장: {{ .label }}</a>{{ end }}</span>
+  </div>
+</nav>

@@ -1,0 +1,5 @@
+{{ define "content" }}
+<article>
+{{ with .GetPage "readme" }}{{ .Content }}{{ else }}<h1>{{ partial "dirname.html" .Path }}</h1>{{ end }}
+</article>
+{{ end }}

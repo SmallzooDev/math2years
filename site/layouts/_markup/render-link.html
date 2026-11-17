@@ -1,0 +1,13 @@
+{{- $href := .Destination -}}
+{{- $u := urls.Parse .Destination -}}
+{{- if and (not $u.IsAbs) (strings.HasSuffix $u.Path ".md") -}}
+  {{- with .PageInner.GetPage $u.Path -}}
+    {{- $target := . -}}
+    {{- if eq (lower .File.ContentBaseName) "readme" }}{{ $target = .Parent }}{{ end -}}
+    {{- $href = $target.RelPermalink -}}
+    {{- with $u.Fragment }}{{ $href = printf "%s#%s" $href . }}{{ end -}}
+  {{- else -}}
+    {{- errorf "링크가 가리키는 쪽이 없다: %s (%s)" .Destination .Position -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>{{- "" -}}

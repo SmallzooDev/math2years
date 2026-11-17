@@ -1,0 +1,36 @@
+title = "math2years"
+locale = "ko"
+defaultContentLanguage = "ko"
+disableKinds = ["taxonomy", "term", "rss", "sitemap"]
+
+[[module.mounts]]
+  source = ".."
+  target = "content"
+  files = ["! site/**", "! .github/**"]
+
+[markup.goldmark.extensions.passthrough]
+  enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+    block = [["$$", "$$"]]
+    inline = [["$", "$"]]
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[[cascade]]
+  [cascade.build]
+    render = "never"
+    list = "never"
+  [cascade.target]
+    path = "{/readme,/**/readme}"
+
+[params]
+  scheme = "auto"
+  fonts = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400;600&display=swap"
+  katex = "https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.css"
+  pageOrder = ["notes", "exercises", "free"]
+  [params.pageLabels]
+    notes = "느낀 것"
+    exercises = "연습문제"
+    free = "Free Note"

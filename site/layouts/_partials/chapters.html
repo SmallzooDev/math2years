@@ -1,0 +1,17 @@
+{{- $book := . -}}
+{{- $readme := $book.GetPage "readme" -}}
+{{- $dirs := slice -}}
+{{- range $book.RegularPagesRecursive }}{{ $dirs = $dirs | append .File.Dir }}{{ end -}}
+{{- $chapters := slice -}}
+{{- range $dirs | uniq | sort -}}
+  {{- $dir := . -}}
+  {{- $base := path.Base (strings.TrimSuffix "/" $dir) -}}
+  {{- $pages := where $book.RegularPagesRecursive "File.Dir" $dir -}}
+  {{- $first := index $pages 0 -}}
+  {{- range collections.Reverse site.Params.pageOrder }}{{ $name := . }}{{ range $pages }}{{ if eq .File.ContentBaseName $name }}{{ $first = . }}{{ end }}{{ end }}{{ end -}}
+  {{- $label := $base | replaceRE `^\d+-` "" | replaceRE `-` " " -}}
+  {{- with $readme }}{{ with findRESubmatch (printf `\[([^\]]+)\]\(%s/` $base) .RawContent 1 }}{{ $label = index (index . 0) 1 }}{{ end }}{{ end -}}
+  {{- with findRESubmatch `^0*(\d+)-` $base 1 }}{{ $label = printf "%s. %s" (index (index . 0) 1) $label }}{{ end -}}
+  {{- $chapters = $chapters | append (dict "dir" $dir "label" $label "page" $first "pages" $pages) -}}
+{{- end -}}
+{{- return $chapters -}}

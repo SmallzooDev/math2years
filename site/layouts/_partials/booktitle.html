@@ -1,0 +1,3 @@
+{{- $title := path.Base .Path | replaceRE `-` " " -}}
+{{- with .GetPage "readme" }}{{ $title = partial "title.html" . }}{{ end -}}
+{{- return $title -}}

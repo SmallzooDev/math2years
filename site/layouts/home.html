@@ -1,0 +1,13 @@
+{{ define "content" }}
+<article>
+{{- $readme := site.GetPage "/readme" }}
+{{- if not (and $readme (strings.Contains $readme.Content "<h1")) }}<h1>{{ site.Title }}</h1>{{ end }}
+{{ with $readme }}{{ .Content }}{{ end }}
+<h2>책</h2>
+<ul class="books">
+  {{- range site.Sections }}
+  <li><a href="{{ .RelPermalink }}">{{ partial "booktitle.html" . }}</a>{{ with len (partial "chapters.html" .) }} <span class="meta">{{ . }}장</span>{{ end }}</li>
+  {{- end }}
+</ul>
+</article>
+{{ end }}

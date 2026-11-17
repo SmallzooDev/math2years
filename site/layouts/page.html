@@ -1,0 +1,25 @@
+{{ define "content" }}
+{{ partial "pages.html" (dict "page" . "class" "tabs") }}
+<article>
+{{- $toc := "" }}
+{{- if strings.Contains .TableOfContents "<li>" }}
+  {{- $toc = printf `<details class="toc"><summary>목차</summary>%s</details>` (replace .TableOfContents ` id="TableOfContents"` "") }}
+{{- end }}
+{{- $parts := split .Content "</h1>" }}
+{{- if eq (len $parts) 2 }}
+{{ index $parts 0 | safeHTML }}</h1>
+{{ $toc | safeHTML }}
+{{ index $parts 1 | safeHTML }}
+{{- else }}
+{{ $toc | safeHTML }}
+{{ .Content }}
+{{- end }}
+</article>
+{{ partial "pageend.html" . }}
+{{ end }}
+{{ define "toc" }}
+{{- if strings.Contains .TableOfContents "<li>" }}
+<p class="toc-title">목차</p>
+{{ .TableOfContents }}
+{{- end }}
+{{ end }}

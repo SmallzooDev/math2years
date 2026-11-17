@@ -31,6 +31,6 @@ disableKinds = ["taxonomy", "term", "rss", "sitemap"]
   katex = "https://cdn.jsdelivr.net/npm/katex@0.18.4/dist/katex.min.css"
   pageOrder = ["notes", "exercises", "free"]
   [params.pageLabels]
-    notes = "느낀 것"
-    exercises = "연습문제"
-    free = "Free Note"
+    notes = "Notes"
+    exercises = "Practices"
+    free = "Scratch"

@@ -1,5 +1,4 @@
 {{ define "content" }}
-{{ partial "pages.html" (dict "page" . "class" "tabs") }}
 <article>
 {{- $toc := "" }}
 {{- if strings.Contains .TableOfContents "<li>" }}
@@ -7,10 +6,16 @@
 {{- end }}
 {{- $parts := split .Content "</h1>" }}
 {{- if eq (len $parts) 2 }}
+<header class="page-head">
 {{ index $parts 0 | safeHTML }}</h1>
+{{ partial "pages.html" (dict "page" . "class" "tabs") }}
+</header>
 {{ $toc | safeHTML }}
 {{ index $parts 1 | safeHTML }}
 {{- else }}
+<header class="page-head">
+{{ partial "pages.html" (dict "page" . "class" "tabs") }}
+</header>
 {{ $toc | safeHTML }}
 {{ .Content }}
 {{- end }}

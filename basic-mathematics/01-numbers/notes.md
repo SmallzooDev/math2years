@@ -49,3 +49,69 @@ $-(-3)$ is the number on the other side of $-3$, which is $3$.
 
 
 
+## Rules For Addition
+
+N3.
+$$
+\text{If} a + b = 0 \text{, then } b = -a \text{and} a = -b
+$$
+
+
+$$
+-a + a + b = -a + 0 = -a
+$$
+
+Since
+$$
+-a + a + b = 0 + b = b
+$$
+
+we find 
+$$
+b = -a
+$$
+
+N4.
+$$
+a = -(-a)
+$$
+
+this true cuz 
+$$
+a + (-a) = 0
+$$
+
+N5.
+$$
+-(a + b) = -a -b
+$$
+
+Proof.
+
+if x, y are integers, then x = -y and y = -x means that x + y = 0
+so to proof, we must show that 
+$$
+(a + b) + (-a - b) = 0
+$$
+
+$$
+\begin{aligned}
+(a + b) + (-a - b) &= (a + b) + (-a + (-b)) && \text{by } x - y = x + (-y) \\
+&= a + b + (-a) + (-b) && \text{by associativity} \\
+&= a + (-a) + b + (-b) && \text{by commutativity} \\
+&= (a + (-a)) + (b + (-b)) && \text{by associativity} \\
+&= 0 + 0 && \text{by } a + (-a) = 0 \\
+&= 0 && \text{by } 0 + a = a
+\end{aligned}
+$$
+
+If a,b are positive integers, then a + b is also a positive integer
+
+thus 
+
+if a,b are negative integers, then a + b is negative.
+
+if a = -n and b = -m where m, n are positive
+$$
+a + b = -n - m = -(n + m)
+$$

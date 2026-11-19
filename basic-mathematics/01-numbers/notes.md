@@ -24,7 +24,9 @@ $$
 a + (-a) = 0 \quad \text{and also} \quad  -a + a = 0
 $$
 
-$-a$ is the additive inverse of $a$: the number that gives $0$ when added to $a$. This equation defines $-a$.
+$-a$ is the additive inverse of $a$ : the number that gives $0$ when added to $a$. 
+
+This equation defines $-a$.
 
 book said read $-a$ as "minus a", not "negative a". $-a$ is not always negative.
 
@@ -53,10 +55,11 @@ $-(-3)$ is the number on the other side of $-3$, which is $3$.
 
 N3.
 $$
-\text{If} a + b = 0 \text{, then } b = -a \text{and} a = -b
+\text{If } a + b = 0 \text{, then } b = -a \text{ and } a = -b
 $$
 
 
+Proof.
 $$
 -a + a + b = -a + 0 = -a
 $$
@@ -89,6 +92,7 @@ $$
 Proof.
 
 if x, y are integers, then x = -y and y = -x means that x + y = 0
+
 so to proof, we must show that 
 $$
 (a + b) + (-a - b) = 0

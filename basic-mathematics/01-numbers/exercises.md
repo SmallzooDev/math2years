@@ -58,10 +58,11 @@ $$
 $$
 
 e-22.
+
 Prove the cancellation law for addition:
 $$
 \begin{aligned}
-\text{If} a + b &= a +c \\
+\text{If } a + b &= a +c \\
 \text{then} \\
 b &= c \\
 \end{aligned}

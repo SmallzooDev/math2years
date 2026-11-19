@@ -119,3 +119,73 @@ if a = -n and b = -m where m, n are positive
 $$
 a + b = -n - m = -(n + m)
 $$
+
+## Rules For Multiplication
+
+N6.
+$$
+1a = a \text{ and } 0a = 0
+$$
+
+Idiom.
+$$
+\begin{aligned}
+a(b + c) &=  ab + ac \\
+\text{and also} \\
+(b + c)a &=  ba + ca \\
+\end{aligned}
+$$
+
+N7.
+$$
+\begin{aligned}
+(-1)a &= -a \\
+\end{aligned}
+$$
+
+
+N8.
+$$
+\begin{aligned}
+-(ab) == (-a)b \\
+\end{aligned}
+$$
+
+Proof.
+
+We must show that (-a)b is negative of ab 
+
+So we need to show 
+$$
+\begin{aligned}
+ab + (-a)b = 0
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+ab + (-a)b &=  (a + (-a))b &= 0b &=  0 \\
+\end{aligned}
+$$
+
+
+N9.
+$$
+\begin{aligned}
+-(ab) = a(-b)
+\end{aligned}
+$$
+
+
+N10.
+$$
+\begin{aligned}
+(-a)(-b) &= ab \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+(-1)(-1) &= -(1(-1)) &= -(-1) \\
+\end{aligned}
+$$

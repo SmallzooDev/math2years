@@ -147,7 +147,7 @@ $$
 N8.
 $$
 \begin{aligned}
--(ab) == (-a)b \\
+-(ab) &= (-a)b \\
 \end{aligned}
 $$
 
@@ -158,7 +158,7 @@ We must show that (-a)b is negative of ab
 So we need to show 
 $$
 \begin{aligned}
-ab + (-a)b = 0
+ab + (-a)b &= 0 \\
 \end{aligned}
 $$
 

@@ -1,6 +1,7 @@
 # 1. Numbers Exercises
 Justify each step, using commutativity and associativity in proving the following identities.
 
+## Rules for adds
 e-1. 
 $$
 \begin{aligned}
@@ -91,5 +92,34 @@ a + (-a) + b &= a + (-a) && \text{by commutativity} \\
 (a + (-a)) + b &= a + (-a) && \text{by associativity} \\
 0 + b &= 0 && \text{by } a + (-a) = 0 \\
 b &= 0 && \text{by } 0 + a = a \\
+\end{aligned}
+$$
+
+## Rules for multiplication
+
+e-1.
+
+a)
+$$
+\begin{aligned}
+2^83^3a^11b^4
+\end{aligned}
+$$
+
+d)
+$$
+\begin{aligned}
+32^3a^3(2ab^2)^3(3ab)^2
+32^3a^32^3a^3b^63^2a^2b^2
+2^63^3a^8b^8
+\end{aligned}
+$$
+
+
+f)
+$$
+\begin{aligned}
+2^5 * a^4 * b^5 * a^3 * b^2 * 2^4 * 3^4 * a^4 * b^12
+2^93^4a^11b^19
 \end{aligned}
 $$

@@ -189,3 +189,26 @@ $$
 (-1)(-1) &= -(1(-1)) &= -(-1) \\
 \end{aligned}
 $$
+
+N11.
+$$
+\begin{aligned}
+a^{m + n} &=  a^ma^n \\
+\end{aligned}
+$$
+
+N12.
+$$
+\begin{aligned}
+(a^m)^n &= a^{mn} \\
+\end{aligned}
+$$
+
+Important.
+$$
+\begin{aligned}
+(a + b)^2 &= a^2 + 2ab + b^2 \\
+(a - b)^2 &= a^2 - 2ab + b^2 \\
+(a + b)(a - b) &= a^2 - b^2 \\
+\end{aligned}
+$$

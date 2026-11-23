@@ -212,3 +212,57 @@ $$
 (a + b)(a - b) &= a^2 - b^2 \\
 \end{aligned}
 $$
+
+## Even and Odd Integers; Divisibility
+
+Theorem 1. 
+Let a, b be positive integers.
+If a is even and b is even, then a + b is even,
+If a is even and b is odd, then a + b is odd,
+If a is odd and b is even, then a + b is odd,
+If a is odd and b is odd, then a + b is even,
+
+
+Proof.
+$$
+\begin{aligned}
+a + b &= 2n + 2k + 1 \\
+&= 2(n + k) + 1 \\
+&= 2m + 1 \text{(letting m = n + k)} \\
+\end{aligned}
+$$
+
+
+Theorem 2.
+Let a be a positive integer. If a is even, then a^2 is even. If a is odd then a^2 is odd.
+Proof.
+Assmue that a is even. This means that a = 2n for some positive integer n. 
+Then
+$$
+\begin{aligned}
+a^2 &= 2n * 2n &= 2(2n^2) &= 2m \\
+\text{letting} m &= 2n^2 \\
+\end{aligned}
+$$
+
+
+Odds are
+$$
+\begin{aligned}
+a^2 &= (2n + 1)^2 &=  (2n^2) + 2(2n)1 + 1^2 \\
+&= 4n^2 + 4n + 1 
+&= 2(2n^2 + 2n) + 1 
+\end{aligned}
+$$
+
+
+Corollary.
+Let a be a positive integer. If a^2 is even, then a is even. If a^2 is odd, then a is odd
+
+Proof.
+$$
+\text{If } a^2 \text{ is even then a cannot be odd because the square of an odd number is odd}
+\text{If } a^2 \text{ is odd then a cannot be even because the square of an even number is even}
+$$
+
+

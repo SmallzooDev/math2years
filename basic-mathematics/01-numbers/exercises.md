@@ -102,15 +102,15 @@ e-1.
 a)
 $$
 \begin{aligned}
-2^83^3a^11b^4
+2^83^3a^{11}b^4
 \end{aligned}
 $$
 
 d)
 $$
 \begin{aligned}
-32^3a^3(2ab^2)^3(3ab)^2
-32^3a^32^3a^3b^63^2a^2b^2
+32^3a^3(2ab^2)^3(3ab)^2 \\
+32^3a^32^3a^3b^63^2a^2b^2 \\
 2^63^3a^8b^8
 \end{aligned}
 $$
@@ -119,7 +119,80 @@ $$
 f)
 $$
 \begin{aligned}
-2^5 * a^4 * b^5 * a^3 * b^2 * 2^4 * 3^4 * a^4 * b^12
-2^93^4a^11b^19
+2^5 * a^4 * b^5 * a^3 * b^2 * 2^4 * 3^4 * a^4 * b^{12} \\
+2^93^4a^{11}b^{19}
+\end{aligned}
+$$
+
+e-2.
+
+$$
+\begin{aligned}
+(a + b)^3 &= (a + b)(a + b)(a + b) \\
+&= (a^2 + 2ab + b^2)(a + b) \\
+&= a^3 + 2a^2b + ab^2 + a^2b + 2ab^2 + b^3 \\
+&= a^3 + 3a^2b + 3ab^2 + b^3 \\ 
+\end{aligned}
+$$
+
+
+e-33.
+$$
+\begin{aligned}
+3^3 * 25000 \text{ and } 3^4 * 25000
+\end{aligned}
+$$
+
+
+## Even and Odd Integers; Divisibility
+
+e-2.
+Prove: If a is even and b is any positive integer, then ab is even.
+$$
+\begin{aligned}
+ab &= (2k)b \\
+&= 2(kb)
+\end{aligned}
+$$
+
+e-3.
+Prove: If a is even, then a^3 is even.
+$$
+\begin{aligned}
+\text{by If a is even and b is even, then a + b is even,}
+a^3 &= a^2 * a \\
+\end{aligned}
+$$
+
+e-5.
+Prove: If n is even then (-1)^n = 1.
+$$
+\begin{aligned}
+(-1)^n &= (-1)^{2k} \\
+&= ((-1)^2)^k \\
+&= (1)^k \\
+\end{aligned}
+$$
+
+e-7.
+Prove: If m,n are odd, then the product mn is odd
+$$
+\begin{aligned}
+mn &= (2a + 1)(2b + 1) \\
+&= 4ab + 2a + 2b + 1 \\ 
+&= 2(2ab + a + b) + 1
+\end{aligned}
+$$
+
+e-24.
+
+Let $a, b$ be integers. Define $a \equiv b \pmod{5}$, which we read "$a$ is congruent to $b$ modulo $5$", to mean that $a - b$ is divisible by $5$.
+
+Prove: If $a \equiv b \pmod{5}$ and $x \equiv y \pmod{5}$, then
+
+$$
+\begin{aligned}
+a + x &\equiv b + y \pmod{5}, \\
+ax &\equiv by \pmod{5}.
 \end{aligned}
 $$

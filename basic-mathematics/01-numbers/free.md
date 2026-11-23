@@ -12,3 +12,18 @@
 - Distributivity
 - The properties of 0, 1, and additive inverses (−a)
 - The rule that the sum of two positive numbers is positive (from the previous page)
+
+```markdown
+e-24.
+
+Let $a, b$ be integers. Define $a \equiv b \pmod{5}$, which we read "$a$ is congruent to $b$ modulo $5$", to mean that $a - b$ is divisible by $5$.
+
+Prove: If $a \equiv b \pmod{5}$ and $x \equiv y \pmod{5}$, then
+
+$$
+\begin{aligned}
+a + x &\equiv b + y \pmod{5}, \\
+ax &\equiv by \pmod{5}.
+\end{aligned}
+$$
+```
